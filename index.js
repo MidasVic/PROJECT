@@ -68,7 +68,7 @@ function game(){
     for(let i = 0; i < 5; i++){
         const playerSelection = prompt("Choose what to throw!", 'Rock Paper Scissors')
         const computerSelection = getComputerChoice();  
-        console.log(playRound(playerSelection.toLowerCase(), computerSelection)); // this is console logged just because i want to peep the computer's play lol
+        console.log(playRound(playerSelection.toLowerCase(), computerSelection)); // this is console logged just so i can see the playground function output
     
         if(playerSelection === null){
             return alert('You quit game!') // strangely dosen't work because of the .tolowerCase() method in playerSelection 
@@ -93,4 +93,4 @@ function game(){
             return 'no winner you both tied!'
         }       
 }
-game();
+console.log(game());
